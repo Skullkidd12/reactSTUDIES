@@ -34,6 +34,7 @@ ul {
   border-radius: 15px;
   font-size: 2rem;
   padding: 45px;
+  display: flex;
 }
 .item {
   background-color: antiquewhite;
@@ -42,4 +43,14 @@ ul {
   margin: 5px;
   text-decoration: none;
   padding: 10px;
+}
+
+.reveal-btn {
+  color: #ffffff;
+  background: none;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
 }
