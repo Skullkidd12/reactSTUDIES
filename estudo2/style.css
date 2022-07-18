@@ -54,3 +54,40 @@ ul {
 .hidden {
   display: none;
 }
+
+.div2 {
+  border: 2px solid rgb(252, 252, 252);
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2rem;
+  padding: 45px;
+}
+
+.div1 {
+  border: 2px solid rgb(252, 252, 252);
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2rem;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 5px;
+  border-radius: 15px;
+  background: none;
+  border: 2px solid rgb(252, 252, 252);
+}
+
+.ul {
+  text-align: center;
+  margin: auto;
+}
+li {
+  text-align: center;
+  border: 2px solid white;
+  margin: 5px;
+}

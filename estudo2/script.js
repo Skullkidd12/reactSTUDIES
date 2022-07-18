@@ -54,7 +54,7 @@ function alerta(a, b) {
 }
 */
 
-const revealBtn = document.querySelector(".reveal-btn");
+/*const revealBtn = document.querySelector(".reveal-btn");
 const hiddenContent = document.querySelector(".text");
 
 function revealContent() {
@@ -66,3 +66,101 @@ function revealContent() {
 }
 
 revealBtn.addEventListener("click", revealContent);
+*/
+
+//EVENT PROPAGATION
+
+/*
+window.addEventListener(
+  "click",
+  function () {
+    console.log("window");
+  },
+  true
+);
+
+document.addEventListener(
+  "click",
+  function () {
+    console.log("document");
+  },
+  true
+);
+
+document.querySelector(".div2").addEventListener(
+  "click",
+  function () {
+    //e.stopPropagation();
+    console.log("div2");
+  },
+  { once: true }
+);
+document.querySelector(".div1").addEventListener(
+  "click",
+  function () {
+    console.log("div1");
+  },
+  true
+);
+document.querySelector(".button").addEventListener(
+  "click",
+  function (e) {
+    e.preventDefault();
+    console.log((e.target.textContent = "Clicked"));
+  },
+  true
+);
+*/
+
+/*document.querySelector("#futebol").addEventListener("click", function (e) {
+  console.log("futebol clicado");
+  console.log(e.target);
+  const target = e.target;
+  if (target.matches("li")) {
+    target.style.backgroundColor = "blue";
+  }
+});
+
+document.querySelector("#basquete").addEventListener("click", function (e) {
+  console.log("basquete clicado");
+  console.log(e.target);
+  const target = e.target;
+  if (target.matches("li")) {
+    target.style.backgroundColor = "blue";
+  }
+});
+
+document.querySelector("#golf").addEventListener("click", function (e) {
+  console.log("golf clicado");
+  console.log(e.target);
+  const target = e.target;
+  if (target.matches("li")) {
+    target.style.backgroundColor = "blue";
+  }
+});
+
+document.querySelector("#baseball").addEventListener("click", function (e) {
+  console.log("baseball clicado");
+  console.log(e.target);
+  const target = e.target;
+  if (target.matches("li")) {
+    target.style.backgroundColor = "blue";
+  }
+});*/
+
+document.querySelector("#ul").addEventListener("click", function (e) {
+  console.log(`${e.target.getAttribute("id")} foi clicado`);
+  const target = e.target;
+
+  if (target.matches("li")) {
+    target.style.backgroundColor = "gray";
+  }
+});
+
+const ul = document.querySelector("#ul");
+const novoItem = document.createElement("li");
+
+novoItem.innerText = "Natação";
+novoItem.setAttribute("id", "Natação");
+
+ul.appendChild(novoItem);
